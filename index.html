@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <title>Clube do Livro</title>
+</head>
+
+<body>
+    <header>
+        <div class="topo" id="topo">
+            <div class="logo">
+                <p>Clube do livro</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#mybooks">Meus Livros</a></li>
+                    <li><a href="#myreservations">Minhas Reservas</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="Pesquisar Livro" name="search" id="search">
+                <button type="submit"><img src="assets/icon-lupa.svg" alt="pesquisar"></button>
+            </div>
+            <div class="profile">
+                <figure>
+                    <img src="assets/img-profile.png" alt="imagem do perfil">
+                </figure>
+                <div>
+                    <p><a href="#">John Doe</a></p>
+                    <p><a href="#">Sair</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="main-top">
+            <button><a href="#resisterbook">  CADASTRAR LIVRO</a></button>
+            <h2>Meus livros</h2>
+        </div>
+        <section class="mybooks" id="mybooks">
+            <div class="card">
+                <div>
+                    <label class="id">1</label>
+                    <img src="assets/capa-alice.jpg" alt="capa do livro alice no país das maravilhas">
+                </div>
+                <div>
+                    <label for="title">Título</label>
+                    <p name="title">Alice no País das Maravilhas</p>
+                </div>
+                <div>
+                    <label for="author">Autor</label>
+                    <p name="author">Lewis Carroll</p>
+                </div>
+                <div>
+                    <label for="status">Status</label>
+                    <p name="status">Reservado</p>
+                </div>
+                <div>
+                    <button>
+                        <figure>
+                            <img src="assets/icons8-excluir.svg" alt="excluir livro">
+                        </figure>
+                    </button>
+                    <button>
+                        <figure>
+                            <img src="assets/icons8-editar.svg" alt="editar livro">
+                        </figure>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <label class="id">2</label>
+                    <img src="assets/capa- pequeno.jfif" alt="capa do livro o pqueno príncipe">
+                </div>
+                <div>
+                    <label for="title">Título</label>
+                    <p name="title">O Pequeno Príncipe</p>
+                </div>
+                <div>
+                    <label for="author">Autor</label>
+                    <p name="author">Antoine de Saint-Exupéry</p>
+                </div>
+                <div>
+                    <label for="status">Status</label>
+                    <p name="status">Disponível</p>
+                </div>
+                <div>
+                    <button>
+                        <figure>
+                            <img src="assets/icons8-excluir.svg" alt="excluir livro">
+                        </figure>
+                    </button>
+                    <button>
+                        <figure>
+                            <img src="assets/icons8-editar.svg" alt="editar livro">
+                        </figure>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <label class="id">3</label>
+                    <img src="assets/capa-moby.jpg" alt="capa do livro moby dick">
+                </div>
+                <div>
+                    <label for="title">Título</label>
+                    <p name="title">Moby Dick</p>
+                </div>
+                <div>
+                    <label for="author">Autor</label>
+                    <p name="author">Herman Melville</p>
+                </div>
+                <div>
+                    <label for="status">Status</label>
+                    <p name="status">Reservado</p>
+                </div>
+                <div>
+                    <button>
+                        <figure>
+                            <img src="assets/icons8-excluir.svg" alt="excluir livro">
+                        </figure>
+                    </button>
+                    <button>
+                        <figure>
+                            <img src="assets/icons8-editar.svg" alt="editar livro">
+                        </figure>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="myreservations" id="myreservations">
+            <h2>Minhas Reservas</h2>
+            <div class="card">
+                <div>
+                    <label class="id">1</label>
+                    <img src="assets/capa-poderoso.jpg" alt="capa do livro o poderoso chefão">
+                </div>
+                <div>
+                    <label for="title">Título</label>
+                    <p name="title">O Poderoso Chefão</p>
+                </div>
+                <div>
+                    <label for="author">Autor</label>
+                    <p name="author">Mario Puzo</p>
+                </div>
+                <div>
+                    <label name="status">Prazo</label>
+                    <p name="status">18/06/2021</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="resisterbook" id="resisterbook">
+            <h2>Cadastrar Livro</h2>
+            <div>
+                <form action="">
+                    <label for="resister-title">Título</label>
+                    <input type="text" name="resister-title">
+
+                    <label for="resister-author">Autor</label>
+                    <input type="text" name="resister-author">
+
+                    <div id="anexar">
+                        <label class="import" for="importbook">Importar livro</label>
+                        <input type="file" name="importbook" id="importbook">
+
+                        <label class="import" for="importcover">Anexar capa</label>
+                        <input type="file" name="importcover" id="importcover">
+                    </div>
+
+
+                    <div class="resister-button">
+                        <button type="submit" class="btn-resister">Cadastrar</button>
+                        <button class="btn-resister-cancel">Cancelar</button>
+                    </div>
+
+                </form>
+                <figure>
+                    <img src="assets/Biblioteca.png" alt="uma moça e um rapaz lendo na biblioteca">
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <figure>
+            <a href="#topo" ><img src="assets/arrow-up.png" alt="voltar ao topo"></a>
+        </figure>
+        <div class="contact" id="contact">
+            <p>Contate-nos</p>
+            <div class="social-media">
+                <a href="tel:+5585991646878"><img src="assets/icon-phone.png" alt="telefone"></a>
+                <a href="https://www.linkedin.com/in/mariaclarahl/"><img src="assets/icons8-linkedin.svg"
+                        alt="linkedin"></a>
+                <a href="https://www.instagram.com/"><img src="assets/icon-instagram.svg" alt="instagram"></a>
+                <a href="https://www.facebook.com/"><img src="assets/icons8-facebook.svg" alt="facebook"></a>
+                <a href="mailto:mc.holandalopes@gmail.com"><img src="assets/icon-email.png" alt="instagram"></a>
+            </div>
+        </div>
+        <div class="footer-info">
+            <p>Copyright &copy; 2021</p>
+            <p>Feito com &hearts; by Maria Clara</p>
+        </div>
+    </footer>
+</body>
+
+</html>
