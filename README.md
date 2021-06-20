@@ -1,6 +1,8 @@
 # Clube do Livro
 >Teste Front-End WD7
 
+![](images-readme/Biblioteca.png)
+
 ## 💻 Sobre o projeto
 
 Front-End de um projeto CRUD chamado Clube do Livro. 
@@ -13,6 +15,15 @@ Front-End de um projeto CRUD chamado Clube do Livro.
 - JQuery
 
 ## 🎨 Layout
+[Link do Design](https://www.figma.com/file/7stdupQw86ripHYtunBnDO/Clube-do-livro?node-id=0%3A1)
+
+### Desktop
+![](images-readme/desktop.png)
+
+### Mobile
+![](images-readme/mobile.png)
+
+![](images-readme/mobile2.png)
 
 ## 🔎Utilitários
 - Protótipo: [Figma](https://www.figma.com/community)
