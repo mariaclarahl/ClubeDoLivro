@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="jquery.big-slide.js"></script>
+
     <title>Clube do Livro</title>
 </head>
 
@@ -19,7 +22,7 @@
             <div class="logo">
                 <p>Clube do livro</p>
             </div>
-            <nav>
+            <nav class="menu">
                 <ul>
                     <li><a href="#mybooks">Meus Livros</a></li>
                     <li><a href="#myreservations">Minhas Reservas</a></li>
@@ -39,13 +42,34 @@
                     <p><a href="#">Sair</a></p>
                 </div>
             </div>
+
+            <div class="menu-hamburguer">
+                <a href="#menu" class="menu-link">&equiv;</a>
+                <nav id="menu" class="panel" role="navigation">
+                    <ul>
+                        <li>
+                            <figure>
+                                <img src="assets/img-profile.png" alt="imagem do perfil">
+                            </figure>
+                            <p>John Doe</p>
+                        </li>
+    
+                        <li><a href="#mybooks">Meus Livros</a></li>
+                        <li><a href="#myreservations">Minhas Reservas</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="#">Sair</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
     <main>
 
         <div class="main-top">
-            <button><a href="#resisterbook">  CADASTRAR LIVRO</a></button>
+            <button><a href="#resisterbook">
+                    <span style='font-size:2rem; font-family:sans-serif; font-weight: normal;'>+</span>
+                    CADASTRAR LIVRO</a></button>
             <h2>Meus livros</h2>
         </div>
         <section class="mybooks" id="mybooks">
@@ -158,7 +182,7 @@
                 </div>
                 <div>
                     <label name="status">Prazo</label>
-                    <p name="status">18/06/2021</p>
+                    <p name="status">20/06/2021</p>
                 </div>
             </div>
         </section>
@@ -182,7 +206,7 @@
                     </div>
 
 
-                    <div class="resister-button">
+                    <div class="resister-button" id="resister-button">
                         <button type="submit" class="btn-resister">Cadastrar</button>
                         <button class="btn-resister-cancel">Cancelar</button>
                     </div>
@@ -196,7 +220,7 @@
     </main>
     <footer>
         <figure>
-            <a href="#topo" ><img src="assets/arrow-up.png" alt="voltar ao topo"></a>
+            <a href="#topo"><img src="assets/arrow-up.png" alt="voltar ao topo"></a>
         </figure>
         <div class="contact" id="contact">
             <p>Contate-nos</p>
@@ -214,6 +238,14 @@
             <p>Feito com &hearts; by Maria Clara</p>
         </div>
     </footer>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('.menu-link').bigSlide();
+        });
+    </script>
 </body>
 
 </html>

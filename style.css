@@ -33,6 +33,38 @@ header{
     margin: 3rem 0rem 3rem 0rem;
     
 }
+/*----------------------------------------------------MENU HAMBURGUER---------------------------------------------------*/
+.panel ul{
+    width: 14.9rem;
+    display:flex;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+}
+
+.panel ul li {
+    margin: 3rem 0rem 2rem 0rem;
+}
+
+.panel nav ul li a:hover{
+    font-weight: bolder;
+}
+
+.panel ul li figure img{
+    width:6rem;
+    border-radius: 50%;
+    border: solid 3px var(--amarelo);
+}
+
+.panel p{
+    margin:1rem;
+    text-decoration: underline;
+}
+
+.menu-link{
+    display: none;
+}
 
 /*------------------------------------------------------LOGO------------------------------------------------------------*/
 .logo{
@@ -62,17 +94,19 @@ header{
 /*---------------------------------------------------CAIXA DE PESQUISA-----------------------------------------------*/
 .search-box{
     border:none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     display:flex;
     width:16.6rem;
+    height:auto;
     float:right;
 }
 
 .search-box input{
     border:none;
     font-size: 1.8rem;
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
     width:14rem;
+    height:auto;
     font-family:'Raleway', sans-serif;
 }
 .search-box input::placeholder{
@@ -90,6 +124,8 @@ header{
 
 .search-box button img{
     float:left;
+    width:2.5rem;
+    height:auto;
 }
 
 .search-box button img:hover{
@@ -132,7 +168,8 @@ main h2{
 .main-top button{
     width:21.6rem;
     height:5rem;
-    border-radius:10px;
+    font-size:1.8rem;
+    border-radius:1rem;
     background-color: var(--laranja);
     border:var(--offwhite) solid 1px;
     margin-right:10%;
@@ -167,7 +204,7 @@ main h2{
     display:flex;
     justify-content: space-around;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 1rem;
     margin-bottom: 5rem;
     width: 80%;
     height: 13rem;
@@ -185,7 +222,7 @@ main h2{
 }
 
 .card img{
-    width:6rem;
+    width:5rem;
     height:auto;
     border-radius: 2px;
     margin-bottom: 2rem;
@@ -198,7 +235,7 @@ main h2{
 }
 
 .id{
-    margin:0rem 0rem 0rem 2rem;
+    margin:2rem 0rem 0rem 2rem;
     position: relative;
 }
 
@@ -248,7 +285,7 @@ main h2{
     align-items: center;
 }
 
-.resisterbook figure{
+.resisterbook figure img{
     width: 78rem;
     height: 52rem;
 }
@@ -257,7 +294,7 @@ main h2{
     width:48rem;
     height:48rem;
     background-color: white;
-    border-radius:10px;
+    border-radius:1rem;
     border: solid 1px var(--offwhite);
     box-shadow: rgb(226, 226, 226) 2px 2px 3px 2px;
     display:flex;
@@ -310,7 +347,7 @@ form .resister-button button{
     width:16rem;
     height:5rem;
     margin: 0rem 1rem 0rem 1rem;
-    border-radius: 10px;
+    border-radius: 1rem;
     margin-top:6rem;
     font-size: 1.8rem;
     font-family: 'Raleway', sans-serif;
@@ -339,7 +376,7 @@ form .resister-button button{
     color:var(--laranja);
     border: var(--laranja) solid 1px;
 }
-
+/*--------------------------------------------------------------FOOTER--------------------------------------------------------*/
 footer{
     display:flex;
     background-color: var(--amarelo);
@@ -371,6 +408,7 @@ footer .contact .social-media{
 
 .social-media a img{
     margin: 0rem 2rem 0rem 2rem;
+    width:2.5rem;
 }
 
 footer .footer-info{
@@ -381,6 +419,104 @@ footer .footer-info{
     font-size:1.5rem;
     font-weight: normal;
 }
+
+/*---------------------------------------------------------------MEDIA QUERIES---------------------------------------------------------*/
+@media (max-width:1262px){
+    html{
+        font-size:50%;
+    }
+}
+
+@media (max-width:1060px){
+    html{
+        font-size:40%;
+    }
+}
+
+@media (max-width:880px){
+    html{
+        font-size:35%;
+    }
+}
+
+@media (max-width:768px){
+    html{
+        font-size:30%;
+    }
+}
+
+@media (max-width:650px){
+    html{
+        font-size:25%;
+    }
+}
+
+@media (max-width:562px){
+    html{
+        font-size:30%;
+    }
+
+    .menu, .profile{
+        display:none;
+    }
+
+    main h2{
+        margin-left: 15%;
+    }
+
+    .main-top button{
+        margin-right:15%;
+    }
+
+    .topo nav ul li a {
+        margin:0;
+        font-size: 1.6rem;
+    }
+
+  
+
+    .topo, .card{
+        width: 74%;
+    }
+
+    .resisterbook figure img{
+        width:50rem;
+        height: auto;
+    }
+
+    .card{
+        height:18rem;
+    }
+
+    .resisterbook div{
+        flex-direction: column;
+    }
+
+    .resisterbook form{
+        width:50rem;
+        height:50rem;
+        margin-bottom: 10rem;
+    }
+
+    #resister-button{
+        flex-direction: row;
+    }
+
+    #anexar{
+        flex-direction: row;
+    }
+
+    .menu-link{
+        font-size: 5rem;
+        text-decoration: none;
+        color:black;
+        display: block;
+    }
+
+}
+
+
+
 
 
 
